@@ -1,0 +1,6 @@
+<p>employees component works!</p>
+
+<div  *ngFor="let employee of employees">
+    <button  (click)="gotoDetail(employee)">
+        <span [class.selected]="selectedEmployee(employee)">{{employee.name}}</span></button>
+</div>
